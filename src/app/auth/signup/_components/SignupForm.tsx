@@ -17,6 +17,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { passwordStrength } from "check-password-strength";
 import PasswordStrength from "./PasswordStrength";
+import { dummyCourses } from "../dummyData";
 
 function SignupForm() {
   const {
@@ -40,21 +41,6 @@ function SignupForm() {
   const handleSignUp: SubmitHandler<SignupInputType> = async (data) => {
     console.log(data);
   };
-
-  const dummyCourses = [
-    {
-        key: 1,
-        label: "BS Computer Engineering"
-    },
-    {
-        key: 2,
-        label: "BS Information Technology"
-    },
-    {
-        key: 3,
-        label: "BS Computer Science"
-    }, 
-  ]
 
   return (
     <form
@@ -83,7 +69,7 @@ function SignupForm() {
         {...register("course")}
       >
         {dummyCourses.map((course) => (
-          <SelectItem key={course.key}>
+          <SelectItem key={course.value}>
             {course.label}
           </SelectItem>
         ))}
