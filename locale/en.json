@@ -1,3 +1,18 @@
 {
-    "greetingMessage": "Hello! Welcome to Campus Hub"
+    "signUp": {
+        "heading": "Sign Up",
+        "subheading": "Become a member and enjoy exclusive promotions.",
+        "labels": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "course": "Course",
+            "year": "Year",
+            "email":"Email Address",
+            "password": "Password",
+            "confirmPassword": "Confirm Password"
+        },
+        "submit": "Register Account",
+        "redirectSignIn": "Log in here",
+        "alreadyHaveAnAccount": "Already have an account?"
+    }
 }
