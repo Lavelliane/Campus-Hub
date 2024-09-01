@@ -5,7 +5,7 @@ import { SignupFormSchema } from "@/schema/signup";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SignupInputType } from "@/types/types";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input, Select, SelectItem } from "@nextui-org/react";
 import { t } from "../../../../../lib/translator";
 import {
   AcademicCapIcon,
@@ -41,6 +41,21 @@ function SignupForm() {
     console.log(data);
   };
 
+  const dummyCourses = [
+    {
+        key: 1,
+        label: "BS Computer Engineering"
+    },
+    {
+        key: 2,
+        label: "BS Information Technology"
+    },
+    {
+        key: 3,
+        label: "BS Computer Science"
+    }, 
+  ]
+
   return (
     <form
       onSubmit={handleSubmit(handleSignUp)}
@@ -60,13 +75,19 @@ function SignupForm() {
         startContent={<UserIcon className="w-4" />}
         {...register("lastName")}
       />
-      <Input
+      <Select
+        label={t("signUp.labels.course")}
         errorMessage={errors.course?.message}
         isInvalid={!!errors.course}
-        label={t("signUp.labels.course")}
         startContent={<AcademicCapIcon className="w-4" />}
         {...register("course")}
-      />
+      >
+        {dummyCourses.map((course) => (
+          <SelectItem key={course.key}>
+            {course.label}
+          </SelectItem>
+        ))}
+      </Select>
       <Input
         errorMessage={errors.year?.message}
         isInvalid={!!errors.year}
