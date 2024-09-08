@@ -19,12 +19,13 @@
         "heading":"Sign In",
         "subheading":"If you are already a member you can login with your email address and password.",
         "labels": {
-            "submit": "Register Account",
+           
             "redirectSignUp": "Sign up here",
             "dontHaveAnAccount": "Dont have an account? ",
             "email":"Email Address",
             "password": "Password"
-        }
+        },
+        "submit": "Login"
     }
 
 }
