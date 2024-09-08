@@ -21,7 +21,7 @@
         "labels": {
             "submit": "Register Account",
             "redirectSignUp": "Sign up here",
-            "dontHaveAnAccount": "Dont have an account ? ",
+            "dontHaveAnAccount": "Dont have an account? ",
             "email":"Email Address",
             "password": "Password"
         }
