@@ -45,7 +45,7 @@ function SignupForm() {
   return (
     <form
       onSubmit={handleSubmit(handleSignUp)}
-      className="grid grid-cols-2 gap-3 place-self-stretch gap-3 mt-5"
+      className="grid grid-cols-2 gap-3 place-self-stretch mt-5"
     >
       <Input
         errorMessage={errors.firstName?.message}
