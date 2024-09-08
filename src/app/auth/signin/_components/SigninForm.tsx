@@ -29,13 +29,13 @@ function SigninForm() {
   const [isVisiblePass, setIsVisiblePass] = useState(false);
   const toggleVisiblePass = () => setIsVisiblePass((prev) => !prev);
 
-  const handleSignUp: SubmitHandler<SignInInputType> = async (data) => {
+  const handleSignIn: SubmitHandler<SignInInputType> = async (data) => {
     console.log(data);
   };
 
   return (
     <form
-      onSubmit={handleSubmit(handleSignUp)}
+      onSubmit={handleSubmit(handleSignIn)}
       className="grid grid-cols-2 gap-3 place-self-stretch mt-5"
     >
       <Input
@@ -73,7 +73,7 @@ function SigninForm() {
         type="submit"
         className="col-span-2 bg-black rounded-md text-white py-3 mt-3"
       >
-        {t("signUp.submit")}
+        {t("signIn.submit")}
       </Button>
     </form>
   );
