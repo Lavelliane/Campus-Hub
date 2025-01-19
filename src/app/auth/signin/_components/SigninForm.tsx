@@ -5,7 +5,7 @@ import { SigninFormSchema } from "@/schema/signin";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SignInInputType } from "@/types/types";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input } from "@heroui/react";
 import { t } from "../../../../../lib/translator";
 import { 
   EnvelopeIcon,

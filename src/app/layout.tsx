@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <NextUIProvider>
+      <HeroUIProvider>
         <body className={inter.className} suppressHydrationWarning={true}>{children}</body>
-      </NextUIProvider>
+      </HeroUIProvider>
     </html>
   );
 }

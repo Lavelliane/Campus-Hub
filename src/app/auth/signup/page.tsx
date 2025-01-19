@@ -1,7 +1,7 @@
 import React from "react";
 import { t } from "../../../../lib/translator";
 import SignupForm from "./_components/SignupForm";
-import { Link } from "@nextui-org/react";
+import { Link } from "@heroui/react";
 import CampusHubLink from "@/components/Link";
 
 function SignUpPage() {

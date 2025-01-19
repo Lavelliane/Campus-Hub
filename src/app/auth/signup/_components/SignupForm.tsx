@@ -5,7 +5,7 @@ import { SignupFormSchema } from "@/schema/signup";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SignupInputType } from "@/types/types";
-import { Button, Input, Select, SelectItem } from "@nextui-org/react";
+import { Button, Input, Select, SelectItem } from "@heroui/react";
 import { t } from "../../../../../lib/translator";
 import {
   AcademicCapIcon,
